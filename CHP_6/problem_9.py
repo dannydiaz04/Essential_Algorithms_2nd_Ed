@@ -13,7 +13,7 @@ def heapSort(arr):
 
     # build a max-heap using all non-leaf nodes since leaf nodes are heapified by definition
     # non-leaf nodes start at n//2 -1 index. -1 index ensures we also get root node index
-    for i in range(n //2 - -1, -1, -1):
+    for i in range(n //2 -1, -1, -1):
         heapify(arr, n, i)
 
     # swap the first and last element in the sorted list
